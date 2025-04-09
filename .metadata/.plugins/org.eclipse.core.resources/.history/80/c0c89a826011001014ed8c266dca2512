@@ -1,0 +1,30 @@
+package Tasca8_MatriusUnidimensionals;
+
+import java.util.Scanner;
+
+public class Tasca8_3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner in = new Scanner(System.in);
+		
+		System.out.print("Introdueix el valor de n: ");
+		int n = in.nextInt();
+		
+		int m[] = new int[n];
+		
+		for (int i = 0; i < m.length -1; i++) {
+			System.out.print("Introdueix els valor de la matriu (n-1 elements): ");
+			m[i] = in.nextInt();
+		}
+		
+		System.out.print("Introdueix el numero a inserir: ");
+		int numero = in.nextInt();
+		
+		System.out.printf("Introdueix la posisió (0-%d): ", n-1);
+		int position = in.nextInt();
+
+	}
+
+}

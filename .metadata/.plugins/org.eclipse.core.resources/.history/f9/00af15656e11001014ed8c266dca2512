@@ -1,0 +1,71 @@
+package Tasca8_MatriusUnidimensionals;
+
+import java.util.Scanner;
+
+public class Tasca8_5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner in = new Scanner(System.in);
+		
+		System.out.println("Especifica la longitud de la matriu [2 - 100]: ");
+		int arraySize = in.nextInt();
+		
+		int m[] = new int[arraySize];
+		
+		 for (int i = 0; i < m.length; i++) {
+			 m[i] = (int) (Math.random() * 100); // Generar un número aleatorio entre 0 y 99
+		 }
+		
+		 System.out.println("Matriu generada: ");
+		 for (int i = 0; i < m.length; i++) {
+			System.out.print(m[i] + " ");
+		}
+		 
+		
+		 int odd = 0; // even
+			int even = 0; // par
+			
+			for (int i = 0; i < m.length; i++) {
+				if (m[i] % 2 == 0) {
+					even++;
+				} else {
+					odd++;
+				}
+			}
+			
+			int mOdd[] = new int[odd];
+			int mEven[] = new int [even];
+			
+			int indexOdd = 0, indexEven = 0;
+			for (int i = 0; i < m.length; i++) {
+				if (m[i] % 2 == 0) {
+					mEven[indexEven++] = m[i];
+				} else {
+					mOdd[indexOdd++] = m[i];
+				}
+			}
+			
+			
+			System.out.println();
+			
+			System.out.println("<--- ELEMENTS SENARS --->");
+			for (int i = 0; i < mOdd.length; i++) {
+				System.out.print(mOdd[i] + " ");
+			}
+			
+			System.out.println();
+			
+			System.out.println("<--- ELEMENTS PARELLS --->");
+			for (int i = 0; i < mEven.length; i++) {
+				System.out.print(mEven[i] + " ");
+			}
+	         
+	         
+		
+		
+		
+	}
+
+}

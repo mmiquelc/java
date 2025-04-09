@@ -1,0 +1,49 @@
+package Tasca8_MatriusUnidimensionals;
+
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class Tasca8_7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner in = new Scanner(System.in);
+		
+		int m[] = new int[4];
+		
+		for (int i = 0; i < m.length; i++) {
+           System.out.print("Escriu el " + (i+1) + " número: ");
+           m[i] = in.nextInt();
+        }
+			
+		boolean growing = true;
+		boolean decreasing = true;
+		boolean same = true;
+		
+		for (int i = 0; i < m.length; i++) {
+			if (m[i] == m[i+1]) {
+				same = false;
+			} if (m[i] > m[i+1]) {
+				decreasing = false;
+			} else {
+				growing = false;
+			}
+		}
+		
+		if (growing) {
+			System.out.println("Es creixent");
+		} if (decreasing) {
+			System.out.println("Es decreixent");
+		} else if (same) {
+			System.out.println("Son iguals");
+		}
+		
+			
+		
+		
+		
+ 		
+	}
+
+}
