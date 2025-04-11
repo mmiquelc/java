@@ -17,7 +17,7 @@
 /out/
 /target/
 /tasks/
-.metadata/
+.metadata
 # Archivos de IDE
 .idea/
 .vscode/
