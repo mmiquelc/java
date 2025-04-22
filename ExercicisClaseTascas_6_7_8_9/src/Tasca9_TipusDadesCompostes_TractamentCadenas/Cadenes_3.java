@@ -7,7 +7,7 @@ public class Cadenes_3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         
-        System.out.println("<--El password ha de tenir com a mínim dos dígits-->");
+        
         
         System.out.println("Escriu una contrasenya: ");
         String pswd = in.nextLine();

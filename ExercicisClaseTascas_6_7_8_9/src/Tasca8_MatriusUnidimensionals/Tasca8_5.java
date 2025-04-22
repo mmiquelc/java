@@ -52,7 +52,7 @@ public class Tasca8_5 {
 			}
 			
 			
-			// Fem els prints de els elements senars, parells i la matriu en l'ordre invers
+			// Fem els prints dels elements senars, parells i la matriu en l'ordre invers
 			System.out.println();
 			
 			System.out.print("Elements senars: ");
